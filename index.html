@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button id = "reset">Reset</button>
+    <label for="dimensions">Enter grid size (less than or equal 100):</label>
+    <input type = "text" id="dimensions" name = "dimensions">
+    <button type = "button" onclick="selectDim()">Go</button>
+    <button type = "button" onclick="reset()">Reset</button>
     <div id="grid">
 
     </div>
