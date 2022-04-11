@@ -21,3 +21,6 @@ function createCells(n) {
 createCells(16);
 let cells = document.querySelectorAll(".cell");
 cells.forEach(element => element.style.background = "white");
+cells.forEach(element => element.addEventListener('mouseover', function(){
+    element.style.background = "black";
+}))
