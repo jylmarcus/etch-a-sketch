@@ -4,6 +4,7 @@ function reset(){
 }
 
 function selectDim(){
+    reset();
     let input = document.querySelector("#dimensions");
     createCells(input.value);
     input.value = "";
