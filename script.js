@@ -24,9 +24,7 @@ function createCells(n) {
         alert("Please enter a positive number less than or equal 100.");
         return;
     }
-    while (grid.cell) {
-        grid.removeChild(grid.cell);
-    }
+    grid.innerHTML = ''
     grid.style["grid-template-columns"] = `repeat(${n}, 1fr)`;
     grid.style["grid-template-rows"] = `repeat(${n}, 1fr)`;
     let divQuantity = n*n;
